@@ -6,7 +6,10 @@ before_install:
   - pip install --user cpp-coveralls
 
 
-
+addons:
+  sonarcloud:
+    organization: "danielagera"
+    token: $SONAR_TOKEN
       
       
 script:
